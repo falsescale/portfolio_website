@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Thaqif Nazri</title>
@@ -5,90 +7,174 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-@@ -17,7 +18,8 @@
+
+  <!-- Toggles -->
+  <div class="top-left" id="toggle-description">thaqif nazri</div>
+  <div class="index" id="toggle-artwork">index</div>
+
+  <!-- Description menu -->
+  <div id="menu2" aria-hidden="true">
+    <div class="description">
       Graphic Designer based in the Hague, Netherlands.<br />
       <a href="mailto:thaqifnazri@gmail.com">thaqifnazri@gmail.com</a><br />
       <a href="https://www.instagram.com/tntn.xyz/?hl=en" target="_blank">instagram</a><br />
-      <a href="cv.html">cv</a>
       <a href="cv.html">cv</a><br>
       <a href="works.html">descriptions</a><br>
     </div>
   </div>
 
-@@ -37,6 +39,7 @@
-      <button data-target="jan-middendorp">Jan Middendorp Exhibition</button>
-      <button data-target="kabk-rewire">KABK x Rewire</button>
-      <button data-target="meditations">Meditations in an Emergency</button>
-      <button data-target="navigation">Navigation Narratives</button>
-      <button data-target="patterns">Patterns, Patterns, Patterns</button>
-      <button data-target="quieter">Quieter than the World Allows</button>
-      <button data-target="revisit-records">Re/Visit Records</button>
-@@ -60,7 +63,7 @@
+  <!-- Artwork dropdown menu -->
+  <div id="menu" aria-hidden="true">
+    <div class="menu-inner">
+<button data-target="a-z">An A-Z of Things I Like</button>
+<button data-target="a-promise-of-a-hammock">A Promise of a Hammock</button>
+<button data-target="bloom">Bloom Poster</button>
+<button data-target="carry-that-weight">Carry That Weight</button>
+<button data-target="crossing-border">Crossing Border Festival</button>
+<button data-target="damascus">Damascus Modular Typeface</button>
+<button data-target="edith">Edith</button>
+<button data-target="fluidity">Fluidity in Form</button>
+<button data-target="hello-pale-friend-moon">Hello, Pale Friend Moon</button>
+<button data-target="i-forgot">I Forgot How I Got Here</button>
+<button data-target="i-love-you">I Love You as a Friend</button>
+<button data-target="intermission-party">Intermission Party Programme</button>
+<button data-target="jan-middendorp">Jan Middendorp Exhibition</button>
+<button data-target="kabk-rewire">KABK x Rewire</button>
+<button data-target="meditations">Meditations in an Emergency</button>
+<button data-target="modern-desires">Modern Desires</button>
+<button data-target="navigation">Navigation Narratives</button>
+<button data-target="patterns">Patterns, Patterns, Patterns</button>
+<button data-target="quieter">Quieter than the World Allows</button>
+<button data-target="revisit-records">Re/Visit Records</button>
+<button data-target="resolutions">Resolutions</button>
+<button data-target="robs-flyer">Rob’s Flyer Assignment</button>
+<button data-target="something-to-think-about">Something to Think About</button>
+<button data-target="text-space">Text & Space</button>
+<button data-target="the-colonial-framing-of-laziness">The Colonial Framing of Laziness</button>
+<button data-target="the-place">The Place We Go To Fight Is Where We Learn To Love</button>
+<button data-target="this-didnt-make-it">This Didn’t Make It To Grad</button>
+<button data-target="untitled-artworks">Untitled Artworks from AD + SJ</button>
+
+      <div class="description">
+        <br>
+       Last Update: June 2025.
+      </div>
+
+      
+
+
+    </div>
+  </div>
+
   <!-- Carousel -->
   <div class="carousel" id="carousel" aria-hidden="true">
     <div class="slides" id="slides">
-      <div class="slide" id="intermission-party"><img src="images/ipp_poster.webp" alt="Artwork 1" /></div>
       <div class="slide" id="intermission-party"><img src="images/ipp_poster.jpg" alt="Artwork 1" /></div>
 
       <div class="slide" id="intermission-party"><img src="images/IPP2.jpg" alt="Artwork 1" /></div>
       <div class="slide" id="intermission-party"><img src="images/IPP.jpg" alt="Artwork 2" /></div>
-@@ -79,7 +82,7 @@
+      <div class="slide" id="intermission-party"><img src="images/IPP3.jpg" alt="Artwork 3" /></div>
+      <div class="slide" id="intermission-party"><img src="images/IPP4.jpg" alt="Artwork 4" /></div>
+      <div class="slide" id="this-didnt-make-it"><img src="images/thisdidnt.jpg" alt="Artwork 5" /></div>
+      <div class="slide" id="i-forgot"><img src="images/iforgot.jpg" alt="Artwork 6" /></div>
+      <div class="slide" id="i-forgot"><img src="images/iforgot2.jpg" alt="Artwork 6" /></div>
+      <div class="slide small" id="i-forgot">
+        <video 
+        autoplay muted loop playsinline disablepictureinpicture
+        controlslist="nodownload nofullscreen noremoteplayback" 
+        style="height: 100vh; width: auto; object-fit: contain;">
+        <source src="images/iforgot_screen.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
       </div>     
-       <div class="slide" id="i-forgot"><img src="images/iforgot_flyer.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="untitled-artworks"><img src="images/untitledartworks.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="untitled-artworks"><img src="images/untitledartworks.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="untitled-artworks"><img src="images/untitledarworks_scans.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="text-space"><img src="images/textandspace.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="text-space"><img src="images/textandspace2.jpg" alt="Artwork 6" /></div>
-@@ -88,18 +91,19 @@
-      <div class="slide" id="how-you-are"><img src="images/howyouare2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="quieter"><img src="images/quieter.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="quieter"><img src="images/quieter2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith2.webp" alt="Artwork 6" /></div>
-      <div class="slide small" id="damascus"><img src="images/damascus.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus3.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus2.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="i-love-you"><img src="images/ily.webp" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith2.jpg" alt="Artwork 6" /></div>
-      <div class="slide small" id="damascus"><img src="images/damascus.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus3.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="i-love-you"><img src="images/ily.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="patterns"><img src="images/patterns.gif" alt="Artwork 6" /></div>
-      <div class="slide" id="crossing-border"><img src="images/CrossingBorder.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="jan-middendorp"><img src="images/jan1.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="the-place"><img src="images/theplace.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="the-place"><img src="images/theplace3.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="bloom"><img src="images/Bloom_Poster.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="navigation"><img src="images/lunchlecture.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="robs-flyer"><img src="images/rob1.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="robs-flyer"><img src="images/rob2.jpg" alt="Artwork 6" /></div>     
-      <div class="slide small" id="kabk-rewire"><img src="images/kabkrewire.jpg" alt="Artwork 6" /></div>
-@@ -113,56 +117,75 @@
+      <div class="slide" id="intermission-party"><img src="images/ipp_poster.jpg" alt="Intermission Party Programme" /></div>
+<div class="slide" id="intermission-party"><img src="images/IPP2.jpg" alt="Intermission Party Programme" /></div>
+<div class="slide" id="intermission-party"><img src="images/IPP.jpg" alt="Intermission Party Programme" /></div>
+<div class="slide" id="intermission-party"><img src="images/IPP3.jpg" alt="Intermission Party Programme" /></div>
+<div class="slide" id="intermission-party"><img src="images/IPP4.jpg" alt="Intermission Party Programme" /></div>
+
+<div class="slide" id="this-didnt-make-it"><img src="images/thisdidnt.jpg" alt="This Didn't Make It To Grad" /></div>
+
+<div class="slide" id="i-forgot"><img src="images/iforgot.jpg" alt="I Forgot How I Got Here" /></div>
+<div class="slide" id="i-forgot"><img src="images/iforgot2.jpg" alt="I Forgot How I Got Here" /></div>
+
+<div class="slide small" id="i-forgot">
+  <video autoplay muted loop playsinline disablepictureinpicture controlslist="nodownload nofullscreen noremoteplayback" style="height:100vh;width:auto;object-fit:contain;">
+    <source src="images/iforgot_screen.mp4" type="video/mp4" />
+  </video>
+</div>
+
+<div class="slide" id="i-forgot"><img src="images/iforgot_flyer.jpg" alt="I Forgot How I Got Here" /></div>
+
+<div class="slide" id="untitled-artworks"><img src="images/untitledartworks.jpg" alt="Untitled Artworks" /></div>
+<div class="slide" id="untitled-artworks"><img src="images/untitledarworks_scans.jpg" alt="Untitled Artworks" /></div>
+
+<div class="slide" id="text-space"><img src="images/textandspace.jpg" alt="Text & Space" /></div>
+<div class="slide" id="text-space"><img src="images/textandspace2.jpg" alt="Text & Space" /></div>
+<div class="slide" id="text-space"><img src="images/textandspace3.jpg" alt="Text & Space" /></div>
+
+<div class="slide" id="quieter"><img src="images/quieter.jpg" alt="Quieter than the World Allows" /></div>
+<div class="slide" id="quieter"><img src="images/quieter2.jpg" alt="Quieter than the World Allows" /></div>
+
+<div class="slide" id="edith"><img src="images/edith.jpg" alt="Edith" /></div>
+<div class="slide" id="edith"><img src="images/edith2.jpg" alt="Edith" /></div>
+
+<div class="slide small" id="damascus"><img src="images/damascus.jpg" alt="Damascus Modular Typeface" /></div>
+<div class="slide" id="damascus"><img src="images/damascus2.jpg" alt="Damascus Modular Typeface" /></div>
+<div class="slide" id="damascus"><img src="images/damascus3.jpg" alt="Damascus Modular Typeface" /></div>
+
+<div class="slide" id="i-love-you"><img src="images/ily.jpg" alt="I Love You as a Friend" /></div>
+
+<div class="slide" id="patterns"><img src="images/patterns.gif" alt="Patterns, Patterns, Patterns" /></div>
+
+<div class="slide" id="crossing-border"><img src="images/CrossingBorder.jpg" alt="Crossing Border Festival" /></div>
+
+<div class="slide" id="jan-middendorp"><img src="images/jan1.jpg" alt="Jan Middendorp Exhibition" /></div>
+
+<div class="slide" id="the-place"><img src="images/theplace.jpg" alt="The Place We Go To Fight Is Where We Learn To Love" /></div>
+<div class="slide" id="the-place"><img src="images/theplace3.jpg" alt="The Place We Go To Fight Is Where We Learn To Love" /></div>
+
+<div class="slide" id="bloom"><img src="images/Bloom_Poster.jpg" alt="Bloom Poster" /></div>
+
+<div class="slide" id="navigation"><img src="images/lunchlecture.jpg" alt="Navigation Narratives" /></div>
+
+<div class="slide" id="robs-flyer"><img src="images/rob1.jpg" alt="Rob's Flyer Assignment" /></div>
+<div class="slide" id="robs-flyer"><img src="images/rob2.jpg" alt="Rob's Flyer Assignment" /></div>
+<div class="slide" id="robs-flyer"><img src="images/rob3.jpg" alt="Rob's Flyer Assignment" /></div>
+
+<div class="slide small" id="kabk-rewire"><img src="images/kabkrewire.jpg" alt="KABK x Rewire" /></div>
+
+<div class="slide" id="a-z"><img src="images/az.jpg" alt="An A-Z of Things I Like" /></div>
+<div class="slide" id="a-z"><img src="images/az2.jpg" alt="An A-Z of Things I Like" /></div>
+
+<div class="slide" id="revisit-records"><img src="images/revisit.gif" alt="Re/Visit Records" /></div>
+<div class="slide" id="revisit-records"><img src="images/revisitnew.jpg" alt="Re/Visit Records" /></div>
+
+<div class="slide" id="fluidity"><img src="images/fluidity.jpg" alt="Fluidity in Form" /></div>
+
+<div class="slide" id="meditations"><img src="images/meditations.jpg" alt="Meditations in an Emergency" /></div>
+<div class="slide" id="meditations"><img src="images/meditations2.jpg" alt="Meditations in an Emergency" /></div>
+
+<!-- New works -->
+
+<div class="slide" id="a-promise-of-a-hammock"><img src="images/hammock_1.jpg" alt="A Promise of a Hammock" /></div>
+<div class="slide" id="a-promise-of-a-hammock"><img src="images/hammock_2.jpg" alt="A Promise of a Hammock" /></div>
+
+<div class="slide" id="carry-that-weight"><img src="images/carry1.jpg" alt="Carry That Weight" /></div>
+<div class="slide" id="carry-that-weight"><img src="images/carry2.jpg" alt="Carry That Weight" /></div>
+
+<div class="slide" id="hello-pale-friend-moon"><img src="images/hellopalefriendmoon.jpg" alt="Hello, Pale Friend Moon" /></div>
+
+<div class="slide" id="modern-desires"><img src="images/moderndesires.jpg" alt="Modern Desires" /></div>
+
+<div class="slide" id="resolutions"><img src="images/resolutions.jpg" alt="Resolutions" /></div>
+
+<div class="slide" id="something-to-think-about"><img src="images/stta.jpg" alt="Something to Think About" /></div>
+
+<div class="slide" id="the-colonial-framing-of-laziness"><img src="images/thecolonialframingoflaziness.jpg" alt="The Colonial Framing of Laziness" /></div>
 
   </div>
 
-  <script>
-    // Elements
-    const artworkToggle = document.getElementById("toggle-artwork");
-    const descriptionToggle = document.getElementById("toggle-description");
-    const artworkMenu = document.getElementById("menu");
-    const descriptionMenu = document.getElementById("menu2");
-    const carousel = document.getElementById("carousel");
-    const buttons = document.querySelectorAll('#menu button');
-  
-    // Toggle dropdown by animating height
-    function toggleMenu(menu) {
-      if (menu.style.height === "0px" || !menu.style.height) {
-        menu.style.height = menu.scrollHeight + "px";
-        menu.setAttribute("aria-hidden", "false");
-      } else {
-        menu.style.height = "0px";
-        menu.setAttribute("aria-hidden", "true");
-      }
   <script src="scroll.js"></script>
  <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -108,35 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
       menu.style.height = "0px";
       menu.setAttribute("aria-hidden", "true");
     }
-  
-    // Event listeners for toggles
-    artworkToggle.addEventListener("click", () => toggleMenu(artworkMenu));
-    descriptionToggle.addEventListener("click", () => toggleMenu(descriptionMenu));
-  
-    // Scroll to target artwork smoothly and centered
-    buttons.forEach(button => {
-      button.addEventListener("click", (event) => {
-        event.stopPropagation(); // Prevent accidental side effects
-  
-        const targetId = button.getAttribute("data-target");
-        const target = document.getElementById(targetId);
-        if (target && carousel) {
-          const offsetLeft = target.offsetLeft - (carousel.offsetWidth / 2) + (target.offsetWidth / 2);
-          carousel.scrollTo({
-            left: offsetLeft,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
   }
 
-    window.addEventListener('load', () => {
-  const video = document.querySelector('video');
-  if (video) {
-    video.play().catch((e) => {
-      console.log('Autoplay failed:', e);
-    });
   artworkToggle?.addEventListener("click", () => toggleMenu(artworkMenu));
   descriptionToggle?.addEventListener("click", () => toggleMenu(descriptionMenu));
 
@@ -160,7 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     requestAnimationFrame(step);
   }
-});
 
   // ----------------- Scroll to Artwork on Click -----------------
   buttons.forEach(button => {
@@ -170,8 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.getElementById(targetId);
       if (!target || !carousel) return;
 
-  </script>
-  
       const offsetLeft = target.offsetLeft - (carousel.offsetWidth / 2) + (target.offsetWidth / 2);
 
       // Detect Safari
