@@ -1,191 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Thaqif Nazri</title>
+  <meta charset="UTF-8">
+  <title>Descriptions</title>
   <link rel="icon" href="images/favicon.jpg" type="image/jpeg" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="works.css">
+  <style>
+    /* Optional: basic styling */
+    #artwork-display { margin-top: 20px; }
+    #artwork-image { max-width: 100%; height: auto; display: block; margin-bottom: 10px; }
+    .active { background-color: #ddd; }
+  </style>
 </head>
 <body>
-
-  <!-- Toggles -->
-  <div class="top-left" id="toggle-description">thaqif nazri</div>
+  <a class="top-left" id="toggle-description" href="https://tntn.xyz/">back</a>
   <div class="index" id="toggle-artwork">index</div>
 
-  <!-- Description menu -->
-  <div id="menu2" aria-hidden="true">
-    <div class="description">
-      Graphic Designer based in the Hague, Netherlands.<br />
-      <a href="mailto:thaqifnazri@gmail.com">thaqifnazri@gmail.com</a><br />
-      <a href="https://www.instagram.com/tntn.xyz/?hl=en" target="_blank">instagram</a><br />
-      <a href="cv.html">cv</a><br>
-      <a href="works.html">descriptions</a><br>
-    </div>
-  </div>
-
-  <!-- Artwork dropdown menu -->
-  <div id="menu" aria-hidden="true">
+  <!-- Menu -->
+  <div id="menu">
     <div class="menu-inner">
       <button data-target="a-z">An A-Z of Things I Like</button>
+      <button data-target="a-promise-of-a-hammock">A Promise of a Hammock</button>
       <button data-target="bloom">Bloom Poster</button>
+      <button data-target="carry-that-weight">Carry That Weight</button>
       <button data-target="crossing-border">Crossing Border Festival</button>
       <button data-target="damascus">Damascus Modular Typeface</button>
       <button data-target="edith">Edith</button>
       <button data-target="fluidity">Fluidity in Form</button>
-      <button data-target="how-you-are">How You Are Is Not How I Want You</button>
+      <button data-target="hello-pale-friend-moon">Hello, Pale Friend Moon</button>
       <button data-target="i-forgot">I Forgot How I Got Here</button>
       <button data-target="i-love-you">I Love You as a Friend</button>
       <button data-target="intermission-party">Intermission Party Programme</button>
       <button data-target="jan-middendorp">Jan Middendorp Exhibition</button>
       <button data-target="kabk-rewire">KABK x Rewire</button>
       <button data-target="meditations">Meditations in an Emergency</button>
+      <button data-target="modern-desires">Modern Desires</button>
       <button data-target="navigation">Navigation Narratives</button>
       <button data-target="patterns">Patterns, Patterns, Patterns</button>
       <button data-target="quieter">Quieter than the World Allows</button>
       <button data-target="revisit-records">Re/Visit Records</button>
+      <button data-target="resolutions">Resolutions</button>
       <button data-target="robs-flyer">Rob’s Flyer Assignment</button>
+      <button data-target="something-to-think-about">Something to Think About</button>
       <button data-target="text-space">Text & Space</button>
-      <button data-target="the-place">The Place We To Fight Is Where We Learn To Love</button>
+      <button data-target="the-colonial-framing-of-laziness">The Colonial Framing of Laziness</button>
+      <button data-target="the-place">The Place We Go To Fight Is Where We Learn To Love</button>
       <button data-target="this-didnt-make-it">This Didn’t Make It To Grad</button>
       <button data-target="untitled-artworks">Untitled Artworks from AD + SJ</button>
 
       <div class="description">
         <br>
-       Last Update: June 2025.
+        Last Update: February 2026.
       </div>
-
-      
-
-
     </div>
   </div>
 
-  <!-- Carousel -->
-  <div class="carousel" id="carousel" aria-hidden="true">
-    <div class="slides" id="slides">
-      <div class="slide" id="intermission-party"><img src="images/ipp_poster.jpg" alt="Artwork 1" /></div>
-
-      <div class="slide" id="intermission-party"><img src="images/IPP2.jpg" alt="Artwork 1" /></div>
-      <div class="slide" id="intermission-party"><img src="images/IPP.jpg" alt="Artwork 2" /></div>
-      <div class="slide" id="intermission-party"><img src="images/IPP3.jpg" alt="Artwork 3" /></div>
-      <div class="slide" id="intermission-party"><img src="images/IPP4.jpg" alt="Artwork 4" /></div>
-      <div class="slide" id="this-didnt-make-it"><img src="images/thisdidnt.jpg" alt="Artwork 5" /></div>
-      <div class="slide" id="i-forgot"><img src="images/iforgot.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="i-forgot"><img src="images/iforgot2.jpg" alt="Artwork 6" /></div>
-      <div class="slide small" id="i-forgot">
-        <video 
-        autoplay muted loop playsinline disablepictureinpicture
-        controlslist="nodownload nofullscreen noremoteplayback" 
-        style="height: 100vh; width: auto; object-fit: contain;">
-        <source src="images/iforgot_screen.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      </div>     
-       <div class="slide" id="i-forgot"><img src="images/iforgot_flyer.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="untitled-artworks"><img src="images/untitledartworks.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="untitled-artworks"><img src="images/untitledarworks_scans.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="text-space"><img src="images/textandspace.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="text-space"><img src="images/textandspace2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="text-space"><img src="images/textandspace3.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="how-you-are"><img src="images/howyouare.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="how-you-are"><img src="images/howyouare2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="quieter"><img src="images/quieter.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="quieter"><img src="images/quieter2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="edith"><img src="images/edith2.jpg" alt="Artwork 6" /></div>
-      <div class="slide small" id="damascus"><img src="images/damascus.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus3.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="damascus"><img src="images/damascus2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="i-love-you"><img src="images/ily.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="patterns"><img src="images/patterns.gif" alt="Artwork 6" /></div>
-      <div class="slide" id="crossing-border"><img src="images/CrossingBorder.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="jan-middendorp"><img src="images/jan1.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="the-place"><img src="images/theplace.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="the-place"><img src="images/theplace3.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="bloom"><img src="images/Bloom_Poster.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="navigation"><img src="images/lunchlecture.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="robs-flyer"><img src="images/rob1.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="robs-flyer"><img src="images/rob2.jpg" alt="Artwork 6" /></div>     
-      <div class="slide small" id="kabk-rewire"><img src="images/kabkrewire.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="a-z"><img src="images/az.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="a-z"><img src="images/az2.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="revisit-records"><img src="images/revisit.gif" alt="Artwork 6" /></div>
-      <div class="slide" id="revisit-records"><img src="images/revisitnew.jpg" alt="Artwork 6" /></div>    
-      <div class="slide" id="fluidity"><img src="images/fluidity.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="meditations"><img src="images/meditations.jpg" alt="Artwork 6" /></div>
-      <div class="slide" id="meditations"><img src="images/meditations2.jpg" alt="Artwork 6" /></div>
-
+  <!-- Artwork Area -->
+  <div id="artwork-display" class="artwork-display">
+    <img id="artwork-image" src="" alt="">
+    <div id="artwork-description" class="artwork-description"></div>
   </div>
 
-  <script src="scroll.js"></script>
- <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const artworkToggle = document.getElementById("toggle-artwork");
-  const descriptionToggle = document.getElementById("toggle-description");
-  const artworkMenu = document.getElementById("menu");
-  const descriptionMenu = document.getElementById("menu2");
-  const carousel = document.getElementById("carousel");
-  const buttons = document.querySelectorAll('#menu button');
+  <script>
+    const buttons = document.querySelectorAll('#menu button');
+    const artworkImage = document.getElementById("artwork-image");
+    const artworkDescription = document.getElementById("artwork-description");
 
-  // ----------------- Menu Toggle -----------------
-  function toggleMenu(menu) {
-    if (!menu.style.height || menu.style.height === "0px") {
-      menu.style.height = menu.scrollHeight + "px";
-      menu.setAttribute("aria-hidden", "false");
-    } else {
-      menu.style.height = "0px";
-      menu.setAttribute("aria-hidden", "true");
-    }
-  }
+    const artworkData = {
+      "a-z": {
+        image: "images/az.jpg",
+        description: `
+<p>This project is a homage to <em>Statement and Counter-Statement: Notes on Experimental Jetset</em>, which concludes with an index/glossary-like anthology of texts previously written by them.</p>
+<p>Consisting of short fragments from interviews, lecture notes, and personal correspondence, the last chapter functions as a cut-up collage of ever-changing (and ever-contradicting) ways of reasoning.</p>
+<p>Therefore, in this modest publication, I've chosen to create a list of references corresponding to each letter of the alphabet that have shaped my perspective of seeing the world.</p>`
+      },
+      "a-promise-of-a-hammock": {
+        image: "images/hammock_1.jpg",
+        description: `
+<p>A Promise of a Hammock explores rest as both a physical and psychological state. The project reflects on suspension—between tension and release, labour and leisure.</p>`
+      },
+      "bloom": {
+        image: "images/Bloom_Poster.jpg",
+        description: `<em>Together we can bloom a better tomorrow</em>, a poster for the planet.`
+      },
+      "carry-that-weight": {
+        image: "images/carry1.jpg",
+        description: `
+<p><em>You speak with soft and tempting words<br>
+that always seem to convince me.<br>
+A gentle hum drifts in the air.<br>
+I hear the words that you don’t say to me.<br>
+It brings a gentle ache<br>
+to my already troubled mind.<br>
+When I close my eyes, I pretend I see everything.</em></p>
+<p>The poem reflects the theme of anxieties and worries, referencing the song Carry That Weight by the Beatles.</p>`
+      },
+      "crossing-border": {
+        image: "images/CrossingBorder.jpg",
+        description: "Poster for Crossing Border Festival."
+      },
+      "damascus": {
+        image: "images/damascus.jpg",
+        description: `
+<p>The Damascus Modular Typeface is based on the Umayyad Mosque in Damascus, Syria. Known for its pillars that stretch across the courtyard of the mosque, I dissected their form to create a modular grid system for the typeface.</p>
+<p>The concept ensures each letter connects to replicate the arcade of the mosque. A type specimen and artefact showcase the modular type.</p>
+<p>This project was awarded a <a href="https://www.red-dot.org/project/damascus-modular-typeface" target="_blank" rel="noopener noreferrer">Red Dot Design Award</a> in 2021.</p>`
+      },
+      "edith": {
+        image: "images/edith.jpg",
+        description: `A custom typeface for the title card and poster of horror film, <a href="https://mubi.com/en/nl/films/edith-2023" target="_blank" rel="noopener noreferrer">Edith</a>.`
+      },
+      "fluidity": {
+        image: "images/fluidity.jpg",
+        description: `
+<p>Flyer for IAFD Exhibition w/ Jakob Blessing.</p>
+<p>Embody/Empower: Fluidity in Form is part of an ongoing collaboration between IAFD and the Dutch Ministry of Education, Culture, and Science (OCW). Students designed the official Jos Brink Prijs 2026 award statements as a sustainable alternative to flowers.</p>`
+      },
+      "hello-pale-friend-moon": {
+        image: "images/hellopalefriendmoon.jpg",
+        description: `
+<p>Hello, Pale Friend Moon meditates on distance, longing, and observation, inspired by Wayang Kulit shadow theatre. Shadows and puppets act as a metaphor for colonial memory and reflection.</p>`
+      },
+      "i-forgot": {
+        image: "images/iforgot.jpg",
+        description: `
+<p>Exhibition Identity for Fine Arts w/ Jakob Blessing.</p>
+<p><em>I Forgot How I Got Here</em> is a self-organised exhibition by third-year Fine Arts students at KABK, exploring the theme of forgetting.</p>
+<p>Forgetting is a recurring pillar of the exhibition and a lens on their practice.</p>`
+      },
+      "i-love-you": {
+        image: "images/ily.jpg",
+        description: `<p>I Love You As A Friend is an outcome of different writings put together by my beloved friends. Each contribution encapsulates the feeling and sentiments of these works.</p>`
+      },
+      "intermission-party": {
+        image: "images/IPP2.jpg",
+        description: `
+<p>Intermission's debut album, <a href="https://intermissionn.bandcamp.com/album/intermission-party-programme" target="_blank" rel="noopener noreferrer"><em>Intermission Party Programme</em></a>, features post-punk tunes inspired by Parquet Courts, Talking Heads, and regional SEA influences.</p>`
+      },
+      "jan-middendorp": {
+        image: "images/jan1.jpg",
+        description: `
+<p>Exhibition celebrating the life of <a href="https://www.instagram.com/p/DEsCmYZC6pi/?img_index=1" target="_blank" rel="noopener noreferrer">Jan Middendorp</a>. Hosted at <em>Page Not Found</em>, it explored his archival research and meticulous process.</p>`
+      },
+      "kabk-rewire": {
+        image: "images/kabkrewire.jpg",
+        description: "Riso printed flyer for KABK x Rewire."
+      },
+      "meditations": {
+        image: "images/meditations.jpg",
+        description: `
+<p>Through an interplay of imagery, text, and abstract visuals, the installation invites reflection on indulgence—its allure, excess, and pleasure.</p>
+<ol>
+<li>A carousel projector cycles through film slides, evoking nostalgia.</li>
+<li>A second carousel projector runs through a collection of text that prompts the viewer to question self-reflection, blurring the boundaries between desire and consequence.</li>
+<li>An overhead projector transforms the act of indulgence into a mesmerizing performance. The transparency of the medium invites the audience into an almost dreamlike state.</li>
+</ol>`
+      },
 
-  artworkToggle?.addEventListener("click", () => toggleMenu(artworkMenu));
-  descriptionToggle?.addEventListener("click", () => toggleMenu(descriptionMenu));
+      /* Continue with all remaining items exactly as you provided in the same order: modern-desires, navigation, patterns, quieter, revisit-records, resolutions, robs-flyer, something-to-think-about, text-space, the-colonial-framing-of-laziness, the-place, this-didnt-make-it, untitled-artworks */
 
-  // ----------------- Smooth Scroll Function -----------------
-  function smoothScrollTo(element, targetLeft, duration = 1000) {
-    const startLeft = element.scrollLeft;
-    const distance = targetLeft - startLeft;
-    const startTime = performance.now();
+      "modern-desires": {
+        image: "images/moderndesires.jpg",
+        description: `<p>Modern Desires investigates contemporary longing — how identity, aesthetics, and consumption shape what we believe we want.</p>`
+      },
 
-    function step(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const ease = progress < 0.5
-        ? 2 * progress * progress
-        : -1 + (4 - 2 * progress) * progress; // easeInOut
+      "navigation": {
+        image: "images/lunchlecture.jpg",
+        description: `<p>This project explores the act of navigation—not just in a physical sense, but psychologically and existentially. Observations and self-reflection guide a journey of perceiving and positioning oneself within the world.</p>`
+      },
 
-      element.scrollLeft = startLeft + distance * ease;
+      "patterns": {
+        image: "images/patterns.gif",
+        description: `<p><a href="https://www.instagram.com/p/C74J8UGoans/?hl=en&amp;img_index=1" target="_blank" rel="noopener noreferrer">Patterns, patterns, patterns</a> with Pablo, Keren, and Jakob.</p>`
+      },
 
-      if (elapsed < duration) requestAnimationFrame(step);
-    }
+      "quieter": {
+        image: "images/quieter.jpg",
+        description: `<p>This project explores the act of navigation—not just physically, but in an existential and psychological sense. The narrative follows a journey of perceiving and positioning oneself within the world.</p>`
+      },
 
-    requestAnimationFrame(step);
-  }
+      "revisit-records": {
+        image: "images/revisit.gif",
+        description: `<p>Bootlegging—once seen as theft—is now embraced as a form of creative expression. This project explores how bootlegging shifts from infringement to tribute, recontextualising existing work.</p>
+<p>It functions as critique, honour, and homage—a reinterpretation that engages in cultural dialogue.</p>`
+      },
 
-  // ----------------- Scroll to Artwork on Click -----------------
-  buttons.forEach(button => {
-    button.addEventListener("click", (event) => {
-      event.stopPropagation();
-      const targetId = button.getAttribute("data-target");
-      const target = document.getElementById(targetId);
-      if (!target || !carousel) return;
+      "resolutions": {
+        image: "images/resolutions.jpg",
+        description: `<p>This publication assembles fragments, interviews, and indexes, exploring the work of Kamau Brathwaite. It stages encounters with text where meaning emerges through attention, delay, and disturbance.</p>`
+      },
 
-      const offsetLeft = target.offsetLeft - (carousel.offsetWidth / 2) + (target.offsetWidth / 2);
+      "robs-flyer": {
+        image: "images/rob3.jpg",
+        description: `<p>A collection of all outcomes from Rob’s Flyer Assignment.</p>`
+      },
 
-      // Detect Safari
-      const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-      if (isSafari) {
-        smoothScrollTo(carousel, offsetLeft, 1000); // adjust duration for speed
-      } else {
-        carousel.scrollTo({ left: offsetLeft, behavior: 'smooth' });
+      "something-to-think-about": {
+        image: "images/stta.jpg",
+        description: `<p>Something to Think About explores the intersection of observation, reflection, and playful experimentation. It challenges viewers to consider the subtle interactions between visual cues and emotional responses.</p>`
+      },
+
+      "text-space": {
+        image: "images/textandspace3.jpg",
+        description: `<p><em>I think it's dark and it looks like rain, you said<br>And the wind is blowing<br>Like it's the end of the world, you said<br>And it's so cold, it's like the cold if you were dead<br>Then you smiled for a second</em></p>
+<p>Plainsong, The Cure.</p>`
+      },
+
+      "the-colonial-framing-of-laziness": {
+        image: "images/thecolonialframingoflaziness.jpg",
+        description: `<p>The Colonial Framing of Laziness examines how labour, productivity, and “idleness” have been historically constructed through colonial narratives. The project critiques inherited definitions of value and work.</p>`
+      },
+
+      "the-place": {
+        image: "images/theplace.jpg",
+        description: `<p>Poster/Fold Out for Graduation Project. This was Alexander Namrok’s graduation project, exploring father-son interactions in a self-defense gym.</p>`
+      },
+
+      "this-didnt-make-it": {
+        image: "images/thisdidnt.jpg",
+        description: `<p>Flyer for Komma Collective w/ Jakob Blessing. Come see the killed darlings and things that didn’t make it to grad.</p>`
+      },
+
+      "untitled-artworks": {
+        image: "images/untitledartworks.jpg",
+        description: `<p>Untitled Artworks features paintings and drawings by AD & MSJ. A romantic collection of figurative grotesque artworks expressing personal impressions of life references.</p>`
       }
-    });
-  });
+    };
 
-  // ----------------- Autoplay first video if exists -----------------
-  window.addEventListener('load', () => {
-    const video = document.querySelector('video');
-    if (video) video.play().catch((e) => console.log('Autoplay failed:', e));
-  });
-});
-</script>
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const artwork = artworkData[targetId];
+        const isActive = button.classList.contains("active");
+
+        // Remove active from all buttons
+        buttons.forEach(btn => btn.classList.remove("active"));
+
+        if (isActive) {
+          // Close if clicked again
+          artworkImage.src = "";
+          artworkDescription.innerHTML = "";
+        } else if (artwork) {
+          button.classList.add("active");
+          artworkImage.src = artwork.image;
+          artworkDescription.innerHTML = artwork.description;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
